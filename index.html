@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ultra Maraton Beslenmesi: İnteraktif Strateji Rehberi</title>
+    <title>Oray'ın Soruları: Ultra Maraton Beslenmesi</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
@@ -39,115 +38,54 @@
     <header class="bg-[#F8F7F4]/80 backdrop-blur-sm sticky top-0 z-50 border-b border-gray-200">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col sm:flex-row items-center justify-between py-4">
-                <h1 class="text-2xl font-bold text-[#1E3A8A] mb-4 sm:mb-0">Ultra Beslenme Stratejileri</h1>
+                <h1 class="text-2xl font-bold text-[#1E3A8A] mb-4 sm:mb-0">Oray'ın Soruları</h1>
                 <nav id="main-nav" class="flex flex-wrap justify-center gap-2">
-                    <button data-target="appetite" class="nav-button active text-sm font-semibold px-4 py-2 rounded-full transition-colors duration-300 hover:bg-[#1E3A8A] hover:text-white">1. İştah Kaybı</button>
-                    <button data-target="carbs" class="nav-button text-sm font-semibold px-4 py-2 rounded-full transition-colors duration-300 hover:bg-[#1E3A8A] hover:text-white">2. Karbonhidrat Dengesi</button>
-                    <button data-target="electrolytes" class="nav-button text-sm font-semibold px-4 py-2 rounded-full transition-colors duration-300 hover:bg-[#1E3A8A] hover:text-white">3. Elektrolit Yönetimi</button>
+                    <button data-target="appetite" class="nav-button active text-sm font-semibold px-4 py-2 rounded-full transition-colors duration-300 hover:bg-[#1E3A8A] hover:text-white">Soru 1</button>
+                    <button data-target="carbs" class="nav-button text-sm font-semibold px-4 py-2 rounded-full transition-colors duration-300 hover:bg-[#1E3A8A] hover:text-white">Soru 2</button>
+                    <button data-target="electrolytes" class="nav-button text-sm font-semibold px-4 py-2 rounded-full transition-colors duration-300 hover:bg-[#1E3A8A] hover:text-white">Soru 3</button>
                 </nav>
             </div>
         </div>
     </header>
 
     <main class="max-w-6xl mx-auto p-4 sm:p-6 lg:p-8">
-        
-        <div id="intro" class="text-center mb-12">
-            <h2 class="text-3xl md:text-4xl font-bold text-[#1E3A8A] mb-4">Ultra Dayanıklılıkta Beslenmenin Şifreleri</h2>
-            <p class="max-w-3xl mx-auto text-lg text-gray-600">
-                Başarılı bir ultra maraton, sadece fiziksel antrenman değil, aynı zamanda proaktif ve kişiselleştirilmiş bir beslenme stratejisi gerektirir. Bu interaktif rehber, en sık karşılaşılan 3 kritik beslenme sorununu bilimsel veriler ve pratik çözümlerle ele alarak, kendi N=1 deneyinizi tasarlamanız için size bir yol haritası sunar.
-            </p>
-        </div>
 
         <!-- Soru 1: İştah Kaybı -->
         <section id="appetite" class="content-section active">
             <div class="bg-white p-6 rounded-2xl shadow-lg">
-                <div class="bg-gray-100 border-l-4 border-[#1E3A8A] p-4 mb-8 rounded-r-lg">
-                    <h3 class="text-xl font-bold text-[#1E3A8A] mb-2">Kritik Soru 1:</h3>
+                <div class="bg-gray-100 border-l-4 border-[#1E3A8A] p-4 mb-6 rounded-r-lg">
+                    <h3 class="text-xl font-bold text-[#1E3A8A] mb-2">Kritik Soru 1: İştah Kaybı ve Tat Yorgunluğu</h3>
                     <p class="text-lg text-gray-800 italic">
                         "Ultra maratonlarımın 6-7. saatinden sonra belirgin bir iştah kaybı ve özellikle şekerli gıdalara karşı 'tat yorgunluğu' yaşıyorum. Bu durum, enerji alımımı kritik şekilde engelliyor. Bu fizyolojik ve duyusal engelleri aşmak için hangi pratik ve bilimsel temelli stratejileri uygulamalıyım?"
                     </p>
                 </div>
-
-                <h4 class="text-2xl font-bold text-gray-700 mb-4 border-b pb-2">Konuyla İlgili Bilgilendirme ve Arka Plan</h4>
-                
-                <div class="grid md:grid-cols-2 gap-6 mb-8 mt-6">
-                    <div class="bg-blue-50 p-4 rounded-lg">
-                        <h4 class="font-bold text-lg text-blue-800 mb-2">Fizyolojik Nedenler</h4>
-                        <ul class="list-disc list-inside space-y-2 text-gray-700">
-                            <li><strong>Azalan Kan Akışı:</strong> Vücut, kanı kaslara yönlendirir, sindirim sistemini "ikinci plana" atar. Bu durum mide boşalmasını yavaşlatır.</li>
-                            <li><strong>Hormonal Baskılanma:</strong> Açlık hormonu (ghrelin) düşerken, tokluk hormonları (GLP-1, Peptid YY) yükselir. Beyin "tokum" sinyali alır.</li>
-                            <li><strong>Stres Yanıtı:</strong> Sempatik sinir sistemi aktivasyonu, sindirim fonksiyonlarını doğrudan baskılar.</li>
-                        </ul>
-                    </div>
-                    <div class="bg-green-50 p-4 rounded-lg">
-                        <h4 class="font-bold text-lg text-green-800 mb-2">Tat Yorgunluğu Bilimi</h4>
-                        <p class="text-gray-700">Sürekli aynı tada (genellikle tatlı) maruz kalmak, beyin ve tat reseptörlerini duyarsızlaştırır. Bu "Duyuya Özgü Doygunluk" (Sensory-Specific Satiety), vücudun besin çeşitliliğini teşvik etme mekanizmasıdır ama yarışta performansı düşürür.</p>
-                    </div>
+                <div class="mt-6">
+                    <h4 class="font-semibold text-lg text-gray-700 mb-3">Alt Kırılım Soruları:</h4>
+                    <ul class="list-disc list-inside space-y-2 text-gray-600">
+                        <li>Tat yorgunluğunu önlemek/yönetmek için tat çeşitlendirmesi (tuzlu/ekşi/umami) nasıl planlanmalı?</li>
+                        <li>Yemek istememe anlarında iştahı psikolojik olarak tetikleyecek (mentol, sıcak/soğuk kontrastı) yöntemler nelerdir?</li>
+                        <li>"Mide antrenmanı" (gut training) bu sorunu yarış öncesinde çözmek için ne kadar etkilidir ve nasıl uygulanır?</li>
+                    </ul>
                 </div>
-
-                <h4 class="text-xl font-bold text-[#1E3A8A] mb-4">Stratejik Çözüm Protokolü</h4>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
-                    <div class="border border-gray-200 p-4 rounded-lg text-center">
-                        <div class="text-4xl mb-2">🔄</div>
-                        <h5 class="font-semibold mb-1">Tat Döngüsü</h5>
-                        <p class="text-sm text-gray-600">Her 3-4 beslenmede bir tatlıdan tuzlu, ekşi veya umami tatlara geçiş yapın (kraker, patates, et suyu, zeytin).</p>
-                    </div>
-                    <div class="border border-gray-200 p-4 rounded-lg text-center">
-                        <div class="text-4xl mb-2">🥪</div>
-                        <h5 class="font-semibold mb-1">Doku Çeşitliliği</h5>
-                        <p class="text-sm text-gray-600">Sıvı, jel, çiğnenebilir ve katı formlar arasında geçiş yaparak çiğneme eylemini ve mental tatmini koruyun.</p>
-                    </div>
-                    <div class="border border-gray-200 p-4 rounded-lg text-center">
-                        <div class="text-4xl mb-2">💧</div>
-                        <h5 class="font-semibold mb-1">Damak Sıfırlama</h5>
-                        <p class="text-sm text-gray-600">Tat yorgunluğu başladığında sade su, maden suyu, nane veya zencefil ile damağınızı nötralize edin.</p>
-                    </div>
-                     <div class="border border-gray-200 p-4 rounded-lg text-center">
-                        <div class="text-4xl mb-2">💪</div>
-                        <h5 class="font-semibold mb-1">Mide Antrenmanı</h5>
-                        <p class="text-sm text-gray-600">Antrenmanlarda yarış temposunda ve miktarında beslenerek sindirim sisteminizi yarış koşullarına adapte edin.</p>
-                    </div>
-                </div>
-
-                <div class="bg-indigo-50 p-6 rounded-lg">
-                    <h4 class="text-xl font-bold text-indigo-800 mb-4">İştahı Psikolojik Olarak Tetikleme Yöntemleri</h4>
-                    <div class="space-y-4 text-gray-700">
-                        <p><strong>🌡️ Sıcaklık Kontrastı:</strong> Vücut ısısı yükseldiğinde, <strong>soğuk gıdalar</strong> (donmuş üzüm taneleri, buz parçaları, soğuk karpuz) ferahlatıcı bir etki yaratarak yeme isteğini tetikleyebilir. Tam tersi, gece veya soğuk anlarda <strong>sıcak bir et suyu veya çorba</strong>, hem mideyi rahatlatır hem de tuzlu tadıyla iştahı açar.</p>
-                        <p><strong>🌿 Keskin ve Ferahlatıcı Tatlar:</strong> Mentol, nane veya zencefil gibi keskin tatlar, tatlı yorgunluğunu anında "keser". Bir nane sakızı çiğnemek, zencefilli bir şeker yemek veya mentollü bir pastil emmek, tat reseptörlerini sıfırlayarak bir sonraki besini almayı kolaylaştırır.</p>
-                        <p><strong>🧘 "Normal" Yeme Eylemi:</strong> Yarış sırasında sürekli jel ve bar tüketmek, yeme eylemini mekanik bir göreve dönüştürür. Mola anlarında küçük bir sandviç veya tuzlu kraker gibi "gerçek" bir yiyeceği oturarak yemek, psikolojik olarak normal bir yemek yeme eylemini taklit eder ve beynin iştah sinyallerini yeniden başlatmasına yardımcı olabilir.</p>
-                    </div>
-                </div>
-
             </div>
         </section>
 
         <!-- Soru 2: Karbonhidrat Dengesi -->
         <section id="carbs" class="content-section">
             <div class="bg-white p-6 rounded-2xl shadow-lg">
-                <div class="bg-gray-100 border-l-4 border-[#1E3A8A] p-4 mb-8 rounded-r-lg">
-                    <h3 class="text-xl font-bold text-[#1E3A8A] mb-2">Kritik Soru 2:</h3>
+                <div class="bg-gray-100 border-l-4 border-[#1E3A8A] p-4 mb-6 rounded-r-lg">
+                    <h3 class="text-xl font-bold text-[#1E3A8A] mb-2">Kritik Soru 2: Karbonhidrat Çeşitlendirmesi</h3>
                     <p class="text-lg text-gray-800 italic">
-                        "Ultra yarışlarda saatte 60-90g karbonhidrat hedefine ulaşırken, mide sorunlarını en aza indirip performansı maksimize etmek için katı, sıvı ve jel formlarının ideal oranı ve zamanlaması nasıl olmalıdır? Statik bir oran yerine dinamik bir yaklaşım mı benimsenmeli?"
+                        "Ultra yarışlarda saatte 60-90g karbonhidrat hedefine ulaşırken, mide sorunlarını en aza indirip performansı maksimize etmek için katı, sıvı ve jel formlarının ideal oranı ve zamanlaması nasıl olmalıdır?"
                     </p>
                 </div>
-
-                <h4 class="text-2xl font-bold text-gray-700 mb-4 border-b pb-2">Konuyla İlgili Bilgilendirme ve Arka Plan</h4>
-                
-                <div class="grid md:grid-cols-2 gap-6 mb-8 mt-6">
-                    <div class="bg-amber-50 p-4 rounded-lg">
-                        <h4 class="font-bold text-lg text-amber-800 mb-2">Temel İlke: Çoklu Taşıyıcılar</h4>
-                        <p class="text-gray-700">Vücut, tek tip karbonhidratı (sadece glikoz) saatte ~60g oranında emebilir. Farklı taşıyıcılar kullanan glikoz + fruktoz karışımı ise bu limiti saatte 90g'a çıkararak hem performansı artırır hem de mide sorunlarını azaltır.</p>
-                    </div>
-                    <div class="bg-indigo-50 p-4 rounded-lg">
-                         <h4 class="font-bold text-lg text-indigo-800 mb-2">Dinamik Strateji Neden Önemli?</h4>
-                        <p class="text-gray-700">"%50 sıvı, %30 jel, %20 katı" gibi statik oranlar yerine, yarışın evresine, yoğunluğa ve vücudun geri bildirimlerine göre adapte olan dinamik bir yaklaşım benimsemek çok daha etkilidir.</p>
-                    </div>
-                </div>
-                
-                <h4 class="text-xl font-bold text-[#1E3A8A] mb-4 text-center">Örnek Dinamik Beslenme Periyodizasyonu</h4>
-                <p class="text-center text-gray-600 mb-4">Bu grafik, yarış ilerledikçe karbonhidrat kaynaklarının nasıl değişebileceğini gösteren temsili bir modeldir. Kendi stratejinizi antrenmanlarda test ederek kişiselleştirin.</p>
-                <div class="chart-container relative h-96 max-w-2xl mx-auto">
-                    <canvas id="carbChart"></canvas>
+                 <div class="mt-6">
+                    <h4 class="font-semibold text-lg text-gray-700 mb-3">Alt Kırılım Soruları:</h4>
+                    <ul class="list-disc list-inside space-y-2 text-gray-600">
+                        <li>Statik bir oran (örn. %50 sıvı, %30 jel, %20 katı) mı, yoksa yarışın farklı evrelerine göre değişen dinamik bir yaklaşım mı daha etkilidir?</li>
+                        <li>Farklı karbonhidrat formlarının (sıvı, jel, katı) mide boşalma hızı ve sindirim üzerindeki etkileri nelerdir?</li>
+                        <li>Çoklu taşıyıcılı karbonhidrat (glikoz+fruktoz) kullanımı bu denklemde neden önemlidir?</li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -155,74 +93,23 @@
         <!-- Soru 3: Elektrolit Yönetimi -->
         <section id="electrolytes" class="content-section">
             <div class="bg-white p-6 rounded-2xl shadow-lg">
-                <div class="bg-gray-100 border-l-4 border-[#1E3A8A] p-4 mb-8 rounded-r-lg">
-                    <h3 class="text-xl font-bold text-[#1E3A8A] mb-2">Kritik Soru 3:</h3>
+                <div class="bg-gray-100 border-l-4 border-[#1E3A8A] p-4 mb-6 rounded-r-lg">
+                    <h3 class="text-xl font-bold text-[#1E3A8A] mb-2">Kritik Soru 3: Elektrolit ve Sıvı Dengesi</h3>
                     <p class="text-lg text-gray-800 italic">
                         "Elektrolit alımında sadece sodyuma odaklanmak yeterli midir? Yoksa potasyum, magnezyum ve kalsiyum gibi diğer mineralleri de sistematik olarak plana dahil etmek, özellikle uzun yarışlarda kramp ve performans düşüşünü önlemek için daha doğru bir strateji midir?"
                     </p>
                 </div>
-
-                <h4 class="text-2xl font-bold text-gray-700 mb-4 border-b pb-2">Konuyla İlgili Bilgilendirme ve Arka Plan</h4>
-
-                <div class="bg-red-50 p-4 rounded-lg my-6">
-                    <h4 class="font-bold text-lg text-red-800 mb-2">Hiponatremi Paradoksu: Asıl Tehlike Nedir?</h4>
-                    <p class="text-gray-700">Egzersize bağlı hiponatreminin (kan sodyum seviyesinin tehlikeli düşüşü) ana nedeni genellikle aşırı sodyum kaybı değil, terle kaybedilenden <strong>daha fazla sodyumsuz sıvı (su) tüketmektir.</strong> Bu durum kanı seyrelterek ciddi sağlık sorunlarına yol açabilir. En güvenli strateji, programlı içmek yerine <strong>sadece susadıkça içmektir.</strong></p>
-                </div>
-
-                <h4 class="text-xl font-bold text-[#1E3A8A] mb-4">Göz Ardı Edilen Mineraller ve Kritik Rolleri</h4>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-                    <div class="bg-gray-100 p-4 rounded-lg">
-                        <h5 class="font-semibold text-lg">Sodyum (Na⁺)</h5>
-                        <p class="text-sm text-gray-600">Hücre dışı sıvı dengesini, kan basıncını ve sinir iletimini düzenler.</p>
-                    </div>
-                    <div class="bg-gray-100 p-4 rounded-lg">
-                        <h5 class="font-semibold text-lg">Potasyum (K⁺)</h5>
-                        <p class="text-sm text-gray-600">Hücre içi sıvı dengesini ve kas kasılmalarını düzenleyen sodyum-potasyum pompasının anahtarıdır.</p>
-                    </div>
-                    <div class="bg-gray-100 p-4 rounded-lg">
-                        <h5 class="font-semibold text-lg">Magnezyum (Mg²⁺)</h5>
-                        <p class="text-sm text-gray-600">Enerji (ATP) üretiminde ve kasların kasıldıktan sonra gevşemesinde kritik rol oynar.</p>
-                    </div>
-                    <div class="bg-gray-100 p-4 rounded-lg">
-                        <h5 class="font-semibold text-lg">Kalsiyum (Ca²⁺)</h5>
-                        <p class="text-sm text-gray-600">Her kas kasılmasını başlatan sinyalin tetiklenmesinde temel bir görev alır.</p>
-                    </div>
-                </div>
-                 <div class="mt-8 bg-blue-50 p-4 rounded-lg">
-                    <h4 class="font-bold text-lg text-blue-800 mb-2">Bütünsel Strateji</h4>
-                    <p class="text-gray-700">En etkili yaklaşım, bireysel ter oranınızı ve terdeki sodyum konsantrasyonunu bilmektir (ter testi). Bu veri olmadan, saatte 500-750 mg sodyum genel bir başlangıç noktasıdır. Krampların tek nedeninin elektrolit eksikliği olmadığını, nöromüsküler yorgunluğun da büyük bir faktör olduğunu unutmayın.</p>
+                 <div class="mt-6">
+                    <h4 class="font-semibold text-lg text-gray-700 mb-3">Alt Kırılım Soruları:</h4>
+                    <ul class="list-disc list-inside space-y-2 text-gray-600">
+                        <li>Bu konuyla doğrudan ilintili olarak, ideal su alım stratejisi nasıl olmalı? Susadıkça mı içmeliyiz, yoksa programlı bir şekilde mi?</li>
+                        <li>Egzersize bağlı hiponatremi riskini (sodyum düşüklüğü) yönetirken sodyum alımı ve su tüketimi arasındaki denge nasıl kurulmalıdır?</li>
+                        <li>Terleme oranı ve hava sıcaklığı gibi faktörler, elektrolit ve sıvı planını nasıl değiştirmelidir?</li>
+                    </ul>
                 </div>
             </div>
         </section>
 
-        <!-- Referanslar -->
-        <footer class="mt-12 border-t pt-8">
-            <h3 class="text-2xl font-bold text-center text-[#1E3A8A] mb-6">Bilimsel Referanslar ve İleri Okuma</h3>
-            <div class="max-w-4xl mx-auto text-sm text-gray-600 space-y-4">
-                <div>
-                    <h4 class="font-semibold text-gray-800">İştah Kaybı / Tat Yorgunluğu:</h4>
-                    <ul class="list-disc list-inside ml-4">
-                        <li><a href="https://pubmed.ncbi.nlm.nih.gov/28129427/" target="_blank" class="hover:underline text-blue-600">Costa RJS, et al. (2017). Gut-training...</a></li>
-                        <li><a href="https://journals.lww.com/acsm-msse/Fulltext/2010/11000/CHO_Oxidation_from_a_CHO_Gel_Compared_with_a.19.aspx" target="_blank" class="hover:underline text-blue-600">Pfeiffer B, et al. (2010). CHO oxidation from a CHO gel compared with a drink...</a></li>
-                         <li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4901467/" target="_blank" class="hover:underline text-blue-600">Wilson PB. (2016). The effects of flavor- and texture-based supplement variation...</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-semibold text-gray-800">Karbonhidrat Çeşitlendirmesi:</h4>
-                    <ul class="list-disc list-inside ml-4">
-                        <li><a href="https://link.springer.com/article/10.1007/s40279-014-0148-z" target="_blank" class="hover:underline text-blue-600">Jeukendrup AE. (2014). A step towards personalized sports nutrition...</a></li>
-                        <li><a href="https://cdnsciencepub.com/doi/abs/10.1139/h2012-011" target="_blank" class="hover:underline text-blue-600">Rowlands DS, et al. (2012). Composite versus single transportable carbohydrate solution...</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-semibold text-gray-800">Elektrolit Dengesi:</h4>
-                    <ul class="list-disc list-inside ml-4">
-                        <li><a href="https://journals.lww.com/cjsportsmed/fulltext/2015/07000/statement_of_the_third_international.2.aspx" target="_blank" class="hover:underline text-blue-600">Hew-Butler T, et al. (2015). Statement of the Third International Exercise-Associated Hyponatremia Consensus...</a></li>
-                        <li><a href="https://link.springer.com/article/10.1007/s40279-015-0394-z" target="_blank" class="hover:underline text-blue-600">Hoffman MD, Stuempfle KJ. (2015). Is Sodium Supplementation Necessary...</a></li>
-                    </ul>
-                </div>
-            </div>
-        </footer>
     </main>
 
     <script>
@@ -247,64 +134,6 @@
                             section.classList.remove('active');
                         }
                     });
-                }
-            });
-
-            const ctx = document.getElementById('carbChart').getContext('2d');
-            const carbChart = new Chart(ctx, {
-                type: 'bar',
-                data: {
-                    labels: ['İlk Saatler (0-4s)', 'Orta Bölüm (4-10s)', 'İleri Saatler (10+s)'],
-                    datasets: [{
-                        label: 'Sıvı Karbonhidrat (%)',
-                        data: [60, 40, 30],
-                        backgroundColor: 'rgba(59, 130, 246, 0.7)',
-                    }, {
-                        label: 'Jel / Yarı-Katı (%)',
-                        data: [40, 40, 30],
-                        backgroundColor: 'rgba(239, 68, 68, 0.7)',
-                    }, {
-                        label: 'Katı / Gerçek Gıda (%)',
-                        data: [0, 20, 40],
-                        backgroundColor: 'rgba(245, 158, 11, 0.7)',
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    plugins: {
-                        title: {
-                            display: false,
-                        },
-                        tooltip: {
-                            callbacks: {
-                                label: function(context) {
-                                    let label = context.dataset.label || '';
-                                    if (label) {
-                                        label += ': ';
-                                    }
-                                    if (context.parsed.y !== null) {
-                                        label += context.parsed.y + '%';
-                                    }
-                                    return label;
-                                }
-                            }
-                        }
-                    },
-                    scales: {
-                        x: {
-                            stacked: true,
-                        },
-                        y: {
-                            stacked: true,
-                            max: 100,
-                            ticks: {
-                                callback: function(value) {
-                                    return value + '%'
-                                }
-                            }
-                        }
-                    }
                 }
             });
         });
